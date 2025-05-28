@@ -1,12 +1,43 @@
-# React + Vite
+# 📝 CRUD To-do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal yet stylish **React-based To-do List** with full **CRUD** functionality. Built as a small project to practice state management and UI design using modern tools like **Tailwind CSS** and **Nanoid**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ Create new tasks
+- ❌ Delete single tasks
+- 🧹 Clear all tasks at once
+- 💾 Unique task IDs using `nanoid`
+- 💅 Clean and responsive UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (via Vite)
+- **Tailwind CSS**
+- **Nanoid** – for unique IDs
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/C0nfu5ing-5pring/CRUD-To-do.git
+cd CRUD-To-do
+npm install
+npm run dev
+```
+
+## Folder Structure
+
+CRUD-To-do/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Create.jsx
+│ │ └── Read.jsx
+│ ├── App.jsx
+│ └── main.jsx
+├── package.json
+└── tailwind.config.js
+
+## Author
+
+Made by [Shish Frutwala] (https://github.com/c0nfu5ing-5pring).
