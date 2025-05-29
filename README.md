@@ -15,6 +15,8 @@ A minimal yet stylish **React-based To-do List** with full **CRUD** functionalit
 - **React** (via Vite)
 - **Tailwind CSS**
 - **Nanoid** – for unique IDs
+- **react-hook-form**
+- **react-toastify**
 
 ## 📦 Installation
 
