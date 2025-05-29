@@ -1,10 +1,11 @@
 import { nanoid } from "nanoid";
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import { tasksContext } from "../Wrapper";
 
-const Create = (props) => {
-  let tasks = props.tasks;
-  let settasks = props.settasks;
+const Create = () => {
+  let [tasks, settasks] = useContext(tasksContext);
 
   const {
     register,
@@ -56,6 +57,8 @@ const Create = (props) => {
           Create Task
         </button>
       </form>
+
+      {tasks.length > 0 ? <div className="border-t border-gray-700"></div> : ""}
     </>
   );
 };
