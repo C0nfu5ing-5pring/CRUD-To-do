@@ -1,10 +1,14 @@
+import { toast } from "react-toastify";
+
 const Read = (props) => {
   let tasks = props.tasks;
   let settasks = props.settasks;
 
   let deleteHandler = (id) => {
     let newTasks = tasks.filter((task) => task.id != id);
-    return settasks(newTasks);
+    toast.error("Task Deleted");
+
+    settasks(newTasks);
   };
 
   let renderTasks = tasks.map((task) => {
@@ -26,6 +30,7 @@ const Read = (props) => {
 
   let deleteAllHandler = () => {
     settasks([]);
+    toast.error("All Tasks Deleted");
   };
 
   return (
